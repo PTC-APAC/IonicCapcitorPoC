@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "IonicCapcitorPoC",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
