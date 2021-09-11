@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{user.name || 'Contact Detail'}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container *ngIf="!!user">
+    <div class="center">
+      <img src="{{user.avatar}}">
+      <h3>{{user.name}}</h3>
+      <p>{{user.company}}</p>
+    </div>
+  </ng-container>
+</ion-content>
