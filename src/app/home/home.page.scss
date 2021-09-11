@@ -1,0 +1,39 @@
+.fake-skeleton {
+  width: 60%;
+}
+
+.skeleton-item {
+  padding: 16px;
+  margin-bottom: 5px;
+}
+
+.input-task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+  padding-right: 8px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-right: 16px;
+}
+
+.task-content {
+  font-size: 20px;
+  color: white !important;
+}
+
+.task-done {
+  text-decoration-line: line-through;
+}
+
+.task-datetime {
+  font-size: 9px;
+  color: rgb(200, 200, 200) !important;
+}

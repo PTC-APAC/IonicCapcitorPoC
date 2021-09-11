@@ -9,9 +9,42 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
+      <ion-title size="large">To Do</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Home page"></app-explore-container>
+  <ion-list lines="none">
+    <!-- Add lines of skeleton text bars if there are no todo items already there -->
+    <ng-container *ngIf="isLoaded == false">
+      <div *ngFor="let n of [0,1,2]" class="skeleton-item">
+        <ion-skeleton-text></ion-skeleton-text>
+        <p>
+          <ion-skeleton-text class="fake-skeleton"></ion-skeleton-text>
+        </p>
+      </div>
+    </ng-container>
+
+    <!-- A sliding item contains an item that can be dragged to reveal buttons. 
+     item bottom border shown as inset and as a button with the item id. -->
+    <div class="task-item" *ngFor="let item of tasks" [style.background-color]="item.color">
+      <ion-item color="transparent">
+        <ion-label>
+          <p [ngClass]="{'task-done': item.status == 2}" class="task-content">{{ item.content }}</p>
+          <p class="task-datetime">{{ item.createdAt | date:'short' }}</p>
+        </ion-label>
+      </ion-item>
+      <ion-icon *ngIf="item.status == 1 && !itemIsInProcessing(item.id)" (click)="checkDone(item)" name="square-outline"></ion-icon>
+      <ion-icon *ngIf="item.status == 2 && !itemIsInProcessing(item.id)" (click)="archive(item)"
+        name="close-circle-outline"></ion-icon>
+      <ion-spinner *ngIf="itemIsInProcessing(item.id)" name="dots"></ion-spinner>
+    </div>
+
+    <ng-container *ngIf="isLoaded == true">
+      <div class="input-task">
+        <ion-input aria-placeholder="New task" [(ngModel)]="newTask"></ion-input>
+        <ion-button color="primary" (click)="addNew()" *ngIf="!isAdding">Add</ion-button>
+        <ion-spinner *ngIf="isAdding" name="dots" slot="end"></ion-spinner>
+      </div>
+    </ng-container>
+  </ion-list>
 </ion-content>
