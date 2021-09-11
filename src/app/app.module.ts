@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
+import { FCM } from '@ionic-native/fcm/ngx'
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
@@ -13,7 +14,7 @@ import { AppComponent } from './app.component';
     
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, FCM],
   bootstrap: [AppComponent],
 })
 export class AppModule {}       // Angular Module
