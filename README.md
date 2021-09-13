@@ -32,3 +32,12 @@ Official FCM set up is [here](https://ionicframework.com/docs/native/fcm)
 
 ## Build, Run & Deploy
 
+### Run on iOS
+
+In terminal, run this:
+`ionic capacitor copy ios`
+
+To run simulator with LIVE reload, run this:
+`ionic capacitor run ios -l --external`
+
+To run by XCode, open Xcode and run as native app.

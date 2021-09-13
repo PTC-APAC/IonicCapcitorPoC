@@ -4,6 +4,7 @@ import { ContactService } from 'src/services/contact.service';
 import { Router } from '@angular/router';
 import { getRandomInt } from 'src/util/number';
 import { PushNotification } from 'src/global/push-notification';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-navigation',
@@ -17,6 +18,7 @@ export class NavigationPage {
     private contactService: ContactService,
     private router: Router,
     private fcm: PushNotification,
+    private alertController: AlertController,
   ) {
     this.contacts = this.contactService.getAllContacts();
   }
@@ -28,7 +30,27 @@ export class NavigationPage {
     this.router.navigateByUrl('/contact-detail/' + randomUser.id);
   }
 
-  startPushNotification(): void {
-    this.fcm.start();
+  async startPushNotification(): Promise<void> {
+    try {
+      const token = await this.fcm.start();
+
+      const alert = await this.alertController.create({
+        header: 'Alert',
+        subHeader: 'Firebase Token',
+        message: `Got Token: ${token}`,
+        buttons: ['OK']
+      });
+
+      await alert.present();
+    } catch (e) {
+      const alert = await this.alertController.create({
+        header: 'Alert',
+        subHeader: 'Firebase Token',
+        message: `Got Error: ${e.toString()}`,
+        buttons: ['Dismiss']
+      });
+
+      await alert.present();
+    }
   }
 }

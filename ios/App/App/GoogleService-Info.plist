@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>63605590968-mk93295jaqffahd15q3julm49rvahpbd.apps.googleusercontent.com</string>
+	<string>573947756837-ulgr2n484si1j24jffc9u4li2553jqao.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.63605590968-mk93295jaqffahd15q3julm49rvahpbd</string>
+	<string>com.googleusercontent.apps.573947756837-ulgr2n484si1j24jffc9u4li2553jqao</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBqjxOS_YOAuCCDFmi6rYAMkbp0bjYcEoU</string>
+	<string>AIzaSyDnh_CuDdXQN75DDXrZb9V0N4BDsE25Vuw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>63605590968</string>
+	<string>573947756837</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>io.ptc.ionicangularpoc</string>
+	<string>tech.positivethinking.poc</string>
 	<key>PROJECT_ID</key>
-	<string>ionicangularpocptc</string>
+	<string>inonicangularpoc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ionicangularpocptc.appspot.com</string>
+	<string>inonicangularpoc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:63605590968:ios:76d9463ebbb18dc4405d4d</string>
+	<string>1:573947756837:ios:7c613459c2cabc9f23dacc</string>
 </dict>
 </plist>
