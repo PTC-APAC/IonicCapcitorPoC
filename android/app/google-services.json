@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "63605590968",
+    "project_id": "ionicangularpocptc",
+    "storage_bucket": "ionicangularpocptc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63605590968:android:eed265026982d7b0405d4d",
+        "android_client_info": {
+          "package_name": "io.ptc.ionicangularpoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63605590968-5997jmm2h4jg6b8per3sd56eq0ahskc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-NmjUhSzArGydOXEOn-bHrOGAhEhE4wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63605590968-5997jmm2h4jg6b8per3sd56eq0ahskc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "63605590968-mk93295jaqffahd15q3julm49rvahpbd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.ptc.ionicangularpoc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
