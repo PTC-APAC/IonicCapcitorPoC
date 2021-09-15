@@ -1,40 +1,40 @@
 {
   "project_info": {
-    "project_number": "63605590968",
-    "project_id": "ionicangularpocptc",
-    "storage_bucket": "ionicangularpocptc.appspot.com"
+    "project_number": "573947756837",
+    "project_id": "inonicangularpoc",
+    "storage_bucket": "inonicangularpoc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:63605590968:android:eed265026982d7b0405d4d",
+        "mobilesdk_app_id": "1:573947756837:android:3eb854545dd3c39c23dacc",
         "android_client_info": {
-          "package_name": "io.ptc.ionicangularpoc"
+          "package_name": "tech.positivethinking.poc"
         }
       },
       "oauth_client": [
         {
-          "client_id": "63605590968-5997jmm2h4jg6b8per3sd56eq0ahskc9.apps.googleusercontent.com",
+          "client_id": "573947756837-vkn9e5ki7l4snmqecvls2bi0ks174h19.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA-NmjUhSzArGydOXEOn-bHrOGAhEhE4wg"
+          "current_key": "AIzaSyAayhSBlyDC7MGbBWGG22Pit-wXdegtcKc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "63605590968-5997jmm2h4jg6b8per3sd56eq0ahskc9.apps.googleusercontent.com",
+              "client_id": "573947756837-vkn9e5ki7l4snmqecvls2bi0ks174h19.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "63605590968-mk93295jaqffahd15q3julm49rvahpbd.apps.googleusercontent.com",
+              "client_id": "573947756837-ulgr2n484si1j24jffc9u4li2553jqao.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "io.ptc.ionicangularpoc"
+                "bundle_id": "tech.positivethinking.poc"
               }
             }
           ]
